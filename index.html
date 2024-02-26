@@ -5,7 +5,7 @@
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0" />
-		<title>Alka Wallet</title>
+		<title>Simm Wallet</title>
 		<link
 			rel="shortcut icon"
 			href="./assets/images/Favicon-32x32.ico"
@@ -17,129 +17,190 @@
 			crossorigin="anonymous" />
 		<link
 			rel="stylesheet"
-			href="./assets/css/style.css" />
+			href="./assets/css/style-index.css" />
+		<script
+			defer
+			src="https://kit.fontawesome.com/037baac53d.js"
+			crossorigin="anonymous"></script>
 		<script
 			defer
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 			crossorigin="anonymous"></script>
+		<script
+			defer
+			src="https://code.jquery.com/jquery-3.7.1.min.js"
+			integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+			crossorigin="anonymous"></script>
+		<script
+			defer
+			src="./assets/js/index.js"></script>
 	</head>
-
 	<body>
-		
-
 		<div class="g-container">
-			<div class="g-header">
-				<header class="p-2 border-bottom">
-				<div class="container">
-					<div
-						class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+			<header class="g-header">
+				<nav class="navbar navbar-expand-lg bg-primary">
+					<div class="container-fluid">
 						<a
-							href="./index.html"
-							class="cont-logo d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
-							<img
-								src="./assets/images/main-logo-transparent.png"
-								alt="logo simm"
-								width="60"
-								height="40"
-								class="logo me-3" />
-						</a>
-						<ul
-							class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-							<li>
-								<a
-									href="#"
-									class="nav-link px-2 link-secondary"
-									>Overview</a
-								>
-							</li>
-							<li>
-								<a
-									href="#"
-									class="nav-link px-2 link-body-emphasis"
-									>Inventory</a
-								>
-							</li>
-							<li>
-								<a
-									href="#"
-									class="nav-link px-2 link-body-emphasis"
-									>Customers</a
-								>
-							</li>
-							<li>
-								<a
-									href="#"
-									class="nav-link px-2 link-body-emphasis"
-									>Products</a
-								>
-							</li>
-						</ul>
-						<form
-							class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3"
-							role="search"
-							data-dashlane-rid="31b6b2bb03a7ab56"
-							data-form-type="">
-							<input
-								type="search"
-								class="form-control"
-								placeholder="Search..."
-								aria-label="Search"
-								data-dashlane-rid="1fc5304025b1f13b"
-								data-form-type="" />
-						</form>
-						<div class="dropdown text-end">
-							<a
-								href="#"
-								class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
-								data-bs-toggle="dropdown"
-								aria-expanded="false">
-								<img
-									src="https://github.com/mdo.png"
-									alt="mdo"
-									width="32"
-									height="32"
-									class="rounded-circle" />
-							</a>
-							<ul class="dropdown-menu text-small">
-								<li>
+							class="navbar-brand"
+							href="#"
+							><img
+								src="./assets/images/main-logo-white-transparent.png"
+								alt="simm wallet"
+								width="52px"
+								height="52px"
+						/></a>
+						<button
+							class="navbar-toggler"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#navbarTogglerDemo02"
+							aria-controls="navbarTogglerDemo02"
+							aria-expanded="false"
+							aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div
+							class="collapse navbar-collapse"
+							id="navbarTogglerDemo02">
+							<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+								<li class="nav-item">
 									<a
-										class="dropdown-item"
-										href="#"
-										>New project...</a
-									>
-								</li>
-								<li>
-									<a
-										class="dropdown-item"
-										href="#"
-										>Settings</a
-									>
-								</li>
-								<li>
-									<a
-										class="dropdown-item"
-										href="#"
-										>Profile</a
-									>
-								</li>
-								<li><hr class="dropdown-divider" /></li>
-								<li>
-									<a
-										class="dropdown-item"
-										href="#"
-										>Sign out</a
+										class="nav-link active text-white fs-3 fw-semibold"
+										aria-current="page"
+										href="./index.html"
+										>Inicio</a
 									>
 								</li>
 							</ul>
+							<form
+								class="d-flex"
+								role="search">
+								<button
+									class="btn btn-success btn-sm"
+									type="button">
+									Iniciar Sesión
+								</button>
+								<button
+									class="btn btn-secondary btn-sm mx-4"
+									type="button">
+									Crear Cuenta
+								</button>
+							</form>
 						</div>
 					</div>
-				</div>
+				</nav>
 			</header>
-		</div>
-			<aside class="g-aside">aside</aside>
-			<main class="g-main">main</main>
-			<footer class="g-footer">footer</footer>
+			<main class="g-main d-flex align-items-center justify-content-center ">
+				<form
+					class="border border-info px-5 py-3 border-opacity-25 rounded-5 bg-info bg-opacity-10 col-9 col-sm-6 col-md-4 col-xxl-3"
+                    id="signInForm">
+					<div class="mb-3">
+						<label
+							for="formName"
+							class="form-label"
+							>Nombre de usuario</label
+						>
+						<input
+							type="text"
+							class="form-control"
+							id="formName"
+							value="sebahjs" />
+					</div>
+					<div class="mb-3">
+						<label
+							for="formPass"
+							class="form-label"
+							>Contraseña</label
+						>
+						<input
+							type="password"
+							class="form-control"
+							id="formPass"
+							value="12345" />
+					</div>
+					<div class="mb-3 form-check">
+						<input
+							type="checkbox"
+							class="form-check-input"
+							id="exampleCheck1" />
+						<label
+							class="form-check-label"
+							for="exampleCheck1"
+							>Recordarme</label
+						>
+					</div>
+					<button
+						type="submit"
+						class="btn btn-primary mb-3"
+						id="signIn">
+						Iniciar Sesión
+					</button>
+					<button
+						type="submit"
+						class="btn btn-secondary"
+						disabled>
+						Olvide la contraseña
+					</button>
+				</form>
+				<!-- * alerts -->
+				<div id="liveAlertPlaceholder"></div>
+			</main>
+			<div class="g-footer bg-black bg-opacity-50">
+				<footer
+					class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+					<div class="col-md-4 d-flex align-items-center">
+						<a
+							href="/"
+							class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+							<svg
+								class="bi"
+								width="30"
+								height="24">
+								<use xlink:href="#bootstrap"></use>
+							</svg>
+						</a>
+						<span class="mb-3 mb-md-0 text-white fw-semibold"
+							>© 2024 SIMM Wallet, Inc</span
+						>
+					</div>
+					<ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+						<li class="ms-3">
+							<a
+								class="text-body-secondary"
+								href="#"
+								><svg
+									class="bi"
+									width="24"
+									height="24">
+									<use xlink:href="#twitter"></use></svg
+							></a>
+						</li>
+						<li class="ms-3">
+							<a
+								class="text-body-secondary"
+								href="#"
+								><svg
+									class="bi"
+									width="24"
+									height="24">
+									<use xlink:href="#instagram"></use></svg
+							></a>
+						</li>
+						<li class="ms-3">
+							<a
+								class="text-body-secondary"
+								href="#"
+								><svg
+									class="bi"
+									width="24"
+									height="24">
+									<use xlink:href="#facebook"></use></svg
+							></a>
+						</li>
+					</ul>
+				</footer>
+			</div>
 		</div>
 	</body>
 </html>

@@ -16,6 +16,7 @@
 		'g-aside g-main'
 		'g-footer g-footer';
 	height: 100vh;
+	width: 100vw;
 }
 
 .g-header {
@@ -24,17 +25,18 @@
 
 .g-aside {
 	grid-area: g-aside;
-	background-color: aqua;
 }
 
 .g-main {
 	grid-area: g-main;
-	background-color: azure;
 }
 
 .g-footer {
 	grid-area: g-footer;
-	background-color: bisque;
+}
+
+.g-footer {
+	/* color: black; */
 }
 
 /* header */

@@ -7,7 +7,7 @@
 /* grid area */
 .g-container {
 	display: grid;
-	grid-template-columns: minmax(150px,250px) 1fr;
+	grid-template-columns: minmax(70px,250px) 1fr;
 	grid-template-rows: minmax(30px, 60px) 1fr minmax(100px, 150px);
 	gap: 0px 0px;
 	grid-auto-flow: row;
@@ -35,23 +35,17 @@
 	grid-area: g-footer;
 }
 
-.g-footer {
-	/* color: black; */
-}
 
-/* header */
-.container a .cont-logo{
-	overflow: hidden;
-}
-
-.container a .logo {
-	position: absolute; 
+/** header */
+#logo {
+    position: absolute;
     left: 50px;
-	width: 150px;
-	height: 140px;
-	transform: rotate(-3deg);
+    top: -30px;
+    transform: rotate(-3deg);
+    width: 120px;
+    height: 120px;
 }
 
-.container div ul {
-	padding-left: 170px;
+#list-items{
+    padding-left: 15vw;
 }

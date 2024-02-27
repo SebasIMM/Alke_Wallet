@@ -16,7 +16,7 @@ const appendAlert = (message, symbol, type) => {
 
 // sign in button
 $(document).ready(function () {
-	const correctUser = 'sebas';
+	const correctUser = 'sebastian.medel@sebas.com';
 	const correctPass = '12345';
 
 	$('#signIn').click(function (event) {
@@ -29,7 +29,7 @@ $(document).ready(function () {
             appendAlert('Inicio de sesión exitoso', 'fa-circle-check', 'success');
             setTimeout(function () {
                 
-                window.location.href = './assets/pages/menu.html';
+                window.location.href = './pages/menu.html';
 			}, 1500);
 		} else {
             $('#signInForm').trigger('reset')

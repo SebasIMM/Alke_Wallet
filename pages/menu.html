@@ -31,18 +31,23 @@
 
 	<body>
 		<div class="g-container">
-			<header class="g-header">
-				<nav class="navbar navbar-expand-lg bg-primary">
+			<header class="g-header bg-primary">
+				<nav class="navbar navbar-expand-lg">
 					<div class="container-fluid">
 						<a
 							class="navbar-brand"
-							href="#"
+							href="./menu.html"
 							><img
 								src="../assets/images/main-logo-white-transparent.png"
 								alt="simm wallet"
 								width="52px"
 								height="52px"
-								id="logo"
+								style="position: absolute;
+								left: 50px;
+								top: -30px;
+								transform: rotate(-3deg);
+								width: 120px;
+								height: 120px;"
 						/></a>
 						<button
 							class="navbar-toggler"
@@ -57,13 +62,13 @@
 						<div
 							class="collapse navbar-collapse"
 							id="navbarTogglerDemo02">
-							<ul class="navbar-nav me-auto mb-2 mb-lg-0" id="list-items">
+							<ul class="navbar-nav me-auto mb-2 mb-lg-0" style="padding-left: 15vw;">
 								<li class="nav-item">
 									<a
 										class="nav-lin text-white mx-2 link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover link-offset-3-hover"
 										aria-current="page"
-										href="./menu.html"
-										>Menu</a
+										href="./cuenta.html"
+										>Cuentas</a
 									>
 								</li>
 								<li class="nav-item">
@@ -105,10 +110,10 @@
 									data-form-type="" />
 							</form>
 							<div class="dropdown text-start">
-								<a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle show" data-bs-toggle="dropdown" aria-expanded="true">
+								<a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="true">
 									<img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
 								</a>
-								<ul class="dropdown-menu text-small show dropdown-menu-end" style="position: absolute; inset: 0px auto auto -110px; margin: 3px; transform: translate3d(0px, 34px, 0px);" data-popper-placement="bottom-start">
+								<ul class="dropdown-menu text-small dropdown-menu-end" style="position: absolute; inset: 0px auto auto -110px; margin: 3px; transform: translate3d(0px, 34px, 0px);" data-popper-placement="bottom-start">
 									<li><a class="dropdown-item" href="#">Mis datos</a></li>
 									<li><a class="dropdown-item" href="#">Otros Productos</a></li>
 									<li><a class="dropdown-item" href="#">Mesa de ayuda</a></li>
@@ -116,14 +121,22 @@
 									<li><a class="dropdown-item" href="../index.html">Cerrar Sesión</a></li>
 								</ul>
 							</div>
-							
-							
 						</div>
 					</div>
 				</nav>
 			</header>
-			<aside class="g-aside">aside</aside>
-			<main class="g-main">main</main>
+			<aside class="g-aside">
+				<div class="container d-flex flex-column px-4" style="height: 100%; border-right: 5px solid #eee">
+					<button type="button" class="btn btn-light mt-4 mb-3 border">Cuenta Vista<i class="fa-solid fa-chevron-right" style="position: relative; left: 60px; color: grey;"></i></button>
+					<button type="button" class="btn btn-light mb-2 border " disabled>Cuenta Corriente</button>
+				</div>
+			</aside>
+			<main class="g-main">
+				<div class="container ps-5 pt-4">
+					<h3 class="mb-4">aqui va el carrusel</h3>
+					</h4>
+				</div>
+			</main>
 			<footer class="g-footer bg-black bg-opacity-50">
 				<div
 					class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">

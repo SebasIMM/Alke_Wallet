@@ -32,33 +32,20 @@
 	grid-area: g-footer;
 }
 
-/*******************************/
-
 /** header */
 .container-fluid a img {
-    position: absolute;
+    /* position: absolute;
     left: 50px;
     top: -30px;
     transform: rotate(-3deg);
     width: 120px;
-    height: 120px;
+    height: 120px; */
 }
 
-.container-fluid div ul {
-    padding-left: 15vw;
-}
 
 /* alert */
-#liveAlertPlaceholder {
+#liveAlert {
     position: absolute;
     right: 10px;
     top: 90px
-}
-
-
-@media (max-width: 1200px) {
-
-}
-@media (min-width: 100px) {
-
 }

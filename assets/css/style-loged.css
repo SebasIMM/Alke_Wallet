@@ -34,18 +34,3 @@
 .g-footer {
 	grid-area: g-footer;
 }
-
-
-/** header */
-#logo {
-    position: absolute;
-    left: 50px;
-    top: -30px;
-    transform: rotate(-3deg);
-    width: 120px;
-    height: 120px;
-}
-
-#list-items{
-    padding-left: 15vw;
-}

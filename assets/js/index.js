@@ -67,6 +67,7 @@ $(document).ready(function () {
 			
 		}
 	});
+	
 
 	// withdrawal
 	$('#withdrawalBtn').click(function () {
